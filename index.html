@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--LIN CSS-->
+    <link rel="stylesheet" href="./public/css/app.css">
+    <title>Calculator</title>
+</head>
+<body>
+   <h1 >Calculator</h1>
+    <div class="calculator">
+        <input type="text" id="result" readonly>
+        <div class="buttons">
+            <button class="btn_clear aqua" id="btn_clear" onclick="clearResult()">C</button>
+            <button class="btn_remove aqua" id="btn_remove" onclick="deleteDigit()"><</button>
+            <button class="aqua" id="btn_nbr" onclick="appendInput('/')">/</button>
+            <button id="btn_nbr" onclick="appendInput('7')">7</button>
+            <button id="btn_nbr" onclick="appendInput('8')">8</button>
+            <button id="btn_nbr" onclick="appendInput('9')">9</button>
+            <button class="aqua" id="btn_nbr" onclick="appendInput('*')">*</button>
+            <button id="btn_nbr" onclick="appendInput('4')">4</button>
+            <button id="btn_nbr" onclick="appendInput('5')">5</button>
+            <button id="btn_nbr" onclick="appendInput('6')">6</button>
+            <button class="aqua" id="btn_nbr" onclick="appendInput('-')">-</button>
+            <button id="btn_nbr" onclick="appendInput('1')">1</button>
+            <button id="btn_nbr" onclick="appendInput('2')">2</button>
+            <button id="btn_nbr" onclick="appendInput('3')">3</button>
+            <button class="aqua" id="btn_nbr" onclick="appendInput('+')">+</button>
+            <button id="btn_nbr" onclick="appendInput('0')">0</button>
+            <button class="aqua" id="btn_nbr" onclick="appendInput('.')">.</button>
+            <button class="btn_calcul" id="btn_calcul" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <!--LINK JS-->
+    <script src="./public/js/script.js"></script>
+</body>
+</html>
