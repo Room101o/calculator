@@ -5,12 +5,11 @@ let btn_nbr = document.querySelector("#btn_nbr");
 let btn_calcul = document.querySelector("#btn_calcul");
 
 //^^Function Append
-function appendInput(value) {
+function append(value) {
     document.getElementById('result').value += value;
 }
-btn_nbr.addEventListener("click",appendInput.bind);
 //^^Function Calculate
-function calculate() {
+function calcul() {
     try {
         let result = eval(document.getElementById('result').value);
         document.getElementById('result').value = result;
@@ -18,15 +17,15 @@ function calculate() {
         document.getElementById('result').value = 'Error';
     }
 }
-btn_calcul.addEventListener("click",calculate);
+btn_calcul.addEventListener("click",calcul);
 //^^Function clear
-function clearResult() {
+function clear() {
     document.getElementById('result').value = '';
 }
-btn_clear.addEventListener("click",clearResult);
+btn_clear.addEventListener("click",clear);
 //^^Function delete
-function deleteDigit() {
+function remov() {
     const currentResult = document.getElementById('result').value;
     document.getElementById('result').value = currentResult.slice(0, -1);
 }
-btn_remove.addEventListener("click",deleteDigit);
+btn_remove.addEventListener("click",remov);
